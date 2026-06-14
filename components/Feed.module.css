@@ -1,0 +1,82 @@
+.wrapper {
+  max-width: 440px;
+  margin: 0 auto;
+  min-height: 100dvh;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg);
+  padding: 14px 20px 11px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: var(--font-cormorant), serif;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--red);
+}
+
+.logo em {
+  color: var(--text);
+  font-weight: 400;
+  font-style: italic;
+}
+
+.topLabel {
+  font-size: 11px;
+  color: var(--text-faint);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.filterBar {
+  display: flex;
+  gap: 7px;
+  overflow-x: auto;
+  padding: 11px 20px 9px;
+  scrollbar-width: none;
+  background: var(--bg);
+  position: sticky;
+  top: 52px;
+  z-index: 99;
+  -webkit-overflow-scrolling: touch;
+  border-bottom: 1px solid var(--border);
+}
+
+.filterBar::-webkit-scrollbar { display: none; }
+
+.chip {
+  flex-shrink: 0;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 400;
+  border: 1px solid rgba(26, 26, 26, 0.15);
+  background: transparent;
+  color: var(--text-dim);
+  transition: all 0.18s ease;
+  white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.chipActive {
+  background: var(--red);
+  color: #ffffff;
+  border-color: var(--red);
+  font-weight: 500;
+}
+
+.feed {
+  padding: 14px 16px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
